@@ -28,6 +28,31 @@ public:
 	}
 	//declara metodos
 	
+	//declaracion de setters y getters
+	//declaracion de funciones de cambio y lectura
+	//lectura getter
+	/*tipo_dato getNombreAtributo()
+	{
+		return NombreAtributo;
+	}
+	
+	// cambio setter
+	void setNombreAtributo(tipo_dato valor)
+	{
+		NombreAtributo = valor;
+	}*/
+	
+	int getTarget()
+	{
+		return target;
+	}
+	
+	// cambio setter
+	void setTarget(int x)
+	{
+		target = x;
+	}
+	
 };
 
 struct Hora
@@ -49,6 +74,7 @@ int main(int argc, char *argv[]) {
 	
 	Dice d2;
 	cout<<d2.value;
+	//d2.target = 1;
 	return 0;
 }
 
