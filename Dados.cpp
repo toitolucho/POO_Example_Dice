@@ -57,6 +57,7 @@ public:
 	void throwDice()//arrojar Dado
 	{
 		//asignar un valor al azar a Value
+		
 	}
 	bool isMatch() // hayEmparejamiento
 	{
@@ -78,26 +79,33 @@ public:
 	}
 };
 
-struct Hora
-{
-//public:
-	int hora;
-	int minuto;
-	int segundo;
-//private:
-	char tipo;
-};
 
 int main(int argc, char *argv[]) {
-	//Hora h1;
-	//h1.minuto =7;
-	//cout<<h1.hora<<":"<<h1.minuto<<":"<<h1.segundo<<endl;
-	Dice d1;
-	cout<<d1.value<<endl;
-	
-	Dice d2;
-	cout<<d2.value;
-	//d2.target = 1;
+	int opcion = 1;
+	Dice d1(5);
+	while(opcion==1)
+	{
+		cout<<"1.- Arrojar Dado"<<endl;
+		cout<<"2.- Cambiar Target"<<endl;
+		cout<<"0.- Salir"<<endl;
+		cin>>opcion;
+		if(opcion ==1)
+		{
+			//arrojamos el dado
+			d1.throwDice();
+			//* preguntas si hay match
+			//imprime si acerto de acuerdo a la pregunta
+			//* imprime el valor representado con el dado
+			
+		}
+		if(opcion == 2)
+		{
+			//*cambia el target de d1
+			//pide datos de la consola para cambiarlo
+			
+		}
+		
+	}
 	return 0;
 }
 
