@@ -53,6 +53,29 @@ public:
 		target = x;
 	}
 	
+	//comportamiento
+	void throwDice()//arrojar Dado
+	{
+		//asignar un valor al azar a Value
+	}
+	bool isMatch() // hayEmparejamiento
+	{
+		bool resp ;
+		// pregunta de comparacion entre value y target
+		return resp;
+	}
+	void print()
+	{
+		//modulo que muestra el value obtenido y el target
+		//para representar graficamente, imprime asteriscos de tal manera
+		//que asemejemos un dado. por ejemplo
+		//Si value = 2, se deberia imprimir
+		//  -------
+		//  |  *  |
+		//  |     |
+		//  |  *  |
+		//  -------
+	}
 };
 
 struct Hora
